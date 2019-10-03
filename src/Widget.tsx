@@ -1,7 +1,10 @@
 /** @jsx jsx */
+// pragma needed for emotion "css" prop addition for components
+
 import { Global, css, jsx } from '@emotion/core';
 import { Component } from 'preact';
 import resetStyles from './helpers/Reset';
+import Header from './components/Header';
 
 export type WidgetProps = {
   parentElement?: Element;
@@ -19,7 +22,7 @@ const titleStyle = css({
 });
 
 /**
-    The widget root component
+  The widget root component
 */
 export default class Widget extends Component<WidgetProps, WidgetState> {
   readonly state: WidgetState = initialState;
@@ -33,6 +36,7 @@ export default class Widget extends Component<WidgetProps, WidgetState> {
             ${resetStyles}
           `}
         />
+        <Header />
         <div style={{ fontSize: '3em' }}>
           <div css={titleStyle}>test</div>
           <div>Display Text {this.props.displayText}</div>I am the rendered

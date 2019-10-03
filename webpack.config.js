@@ -7,6 +7,7 @@ const distDir = path.join(__dirname, 'dist');
 const CopyPlugin = require('copy-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const WebpackModules = require('webpack-modules');
+const CompressionPlugin = require('compression-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const widgetConfig = require('./widget.config.json');
@@ -22,7 +23,8 @@ const defaultConfig = {
     new webpack.ProgressPlugin(),
     new WebpackModules(),
     new CleanWebpackPlugin({ protectWebpackAssets: false }),
-    new CopyPlugin([{ from: 'public', to: '.' }])
+    new CopyPlugin([{ from: 'public', to: '.' }]),
+    new CompressionPlugin()
   ],
   module: {
     rules: [

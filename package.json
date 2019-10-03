@@ -8,6 +8,7 @@
     "@emotion/core": "10.0.20",
     "@types/react": "16.9.5",
     "clean-webpack-plugin": "3.0.0",
+    "compression-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "5.0.4",
     "preact": "10.0.0",
     "preact-render-to-string": "5.0.6",
