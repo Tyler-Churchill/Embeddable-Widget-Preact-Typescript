@@ -6,7 +6,7 @@
 * Typescript
 * Smaller bundle size (Preact vs React)
 * Package fonts, CSS, json, transpiled javascript into one .js library bundle (via webpack)
-* Semantic versioning release managment
+* Semantic versioning release management
 * Widget can be mounted in targeted Node
 * No conflicting CSS between the host and widget
 
