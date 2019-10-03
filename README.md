@@ -7,9 +7,8 @@
 * Smaller bundle size (Preact vs React)
 * Package fonts, CSS, json, transpiled javascript into one .js library bundle (via webpack)
 * Semantic versioning release managment
-* Widget can be mounted in targeted selector -- TODO
-* No conflicting CSS between the host and widget -- TODO
-* Tests -- TODO
+* Widget can be mounted in targeted Node
+* No conflicting CSS between the host and widget
 
 ## Getting started
 ### Install dependencies
@@ -17,7 +16,6 @@
 
 ### Start hot-reload development server
 `yarn start`
-
 
 ## Building for production
 

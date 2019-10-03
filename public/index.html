@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,12 +5,20 @@
   </head>
   <body>
     <!-- example import, needs changing based on version and exported library name-->
+    <div>
+      Widget Rendered Below:
+    </div>
+    <div id="test-element">
+      <!-- widget rendered here -->
+    </div>
     <script src="./MyWidget-1.0.0.js"></script>
+    <!-- include with CDN link so always up to date -->
     <script>
       var widget = new MyWidget();
       widget.mount({
+        parentElement: document.getElementById('test-element'),
         displayText: 'hello!'
-      })
+      });
     </script>
   </body>
 </html>
