@@ -1,5 +1,7 @@
 # Preact Embeddable Widget
 
+[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
+
 ## Features
 * Typescript
 * Smaller bundle size (Preact vs React)

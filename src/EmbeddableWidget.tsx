@@ -1,5 +1,5 @@
-import preact, { h, render, Component } from 'preact';
-import WidgetApp from './Widget';
+import preact, { h, render } from 'preact';
+import WidgetApp, {WidgetProps} from './Widget';
 import widgetConfig from '../widget.config.json';
 
 export type Renderable = preact.AnyComponent | JSX.Element | preact.JSX.Element;
@@ -21,7 +21,7 @@ export default class EmbeddableWidget {
         render(this.component, document.body);
       }
 
-    mount = ({...props } = {}) => {
+    mount = (props: WidgetProps) => {
       this.component = <WidgetApp {...props} />;
       if (document.readyState === 'complete') {
         this.render();
