@@ -1,7 +1,7 @@
 /** @jsx jsx */
 // pragma needed for emotion "css" prop addition for components
 
-import { Global, css, jsx } from '@emotion/core';
+import { jsx } from '@emotion/core';
 import { Component } from 'preact';
 import resetStyles from './helpers/Reset';
 import Header from './components/Header';

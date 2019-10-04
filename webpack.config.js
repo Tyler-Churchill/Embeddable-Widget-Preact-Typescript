@@ -53,6 +53,10 @@ const defaultConfig = {
   }
 };
 
+const widgetFilename = widgetConfig.semanticReleases
+  ? `${widgetConfig.widgetName}-${pkg.version}.js`
+  : `${widgetConfig.widgetName}.js`;
+
 module.exports = [
   {
     ...defaultConfig,
@@ -63,7 +67,7 @@ module.exports = [
     output: {
       path: distDir,
       publicPath: '/',
-      filename: `${widgetConfig.widgetName}-${pkg.version}.js`,
+      filename: widgetFilename,
       library: `${widgetConfig.widgetName}`,
       libraryExport: 'default',
       libraryTarget: 'window'

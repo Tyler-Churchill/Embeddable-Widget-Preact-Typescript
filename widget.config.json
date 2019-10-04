@@ -1,3 +1,4 @@
 {
-    "widgetName": "MyWidget"
+  "widgetName": "MyWidget",
+  "semanticReleases": true
 }
