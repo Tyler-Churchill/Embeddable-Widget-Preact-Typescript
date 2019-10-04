@@ -4,13 +4,13 @@ import styled from '@emotion/styled';
 import { jsx } from '@emotion/core';
 
 const Wrapper = styled.header`
-  color: pink;
+  color: #f95738;
 `;
 
 export default function Header() {
   return (
     <div>
-      <Wrapper>test</Wrapper>
+      <Wrapper>Widget Header</Wrapper>
     </div>
   );
 }

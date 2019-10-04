@@ -2,21 +2,29 @@
 <html>
   <head>
     <title>Embeddable Widget Demo</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
   </head>
   <body>
-    <!-- example import, needs changing based on version and exported library name-->
-    <div>
-      Widget Rendered Below:
-    </div>
-    <div id="test-element">
-      <!-- widget rendered here -->
+    <div class="parent">
+      <div class="header">
+        header
+      </div>
+      <div class="content">
+        content
+        <div id="center">
+          <h1>Example Host Page</h1>
+          <div id="widget-container"></div>
+        </div>
+      </div>
+      <div class="footer">
+        footer
+      </div>
     </div>
     <script src="./MyWidget-1.0.0.js"></script>
-    <!-- include with CDN link so always up to date -->
     <script>
       var widget = new MyWidget();
       widget.mount({
-        parentElement: document.getElementById('test-element'),
+        parentElement: document.getElementById('widget-container'),
         displayText: 'hello!'
       });
     </script>
