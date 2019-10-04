@@ -8,6 +8,7 @@ import Header from './components/Header';
 import styled from '@emotion/styled';
 
 const WidgetWrapper = styled.div`
+  ${resetStyles}
   background-color: #30638e;
   color: #ebebd3;
 `;
@@ -33,11 +34,6 @@ export default class Widget extends Component<WidgetProps, WidgetState> {
     return (
       <div>
         {/* Clear all host page defined styles before rendering the widget */}
-        <Global
-          styles={css`
-            ${resetStyles}
-          `}
-        />
         <WidgetWrapper>
           <Header />
           <div>
