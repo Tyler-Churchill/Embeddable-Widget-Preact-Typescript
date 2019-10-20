@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
-    "@emotion/core": "10.0.20",
+    "@emotion/core": "10.0.21",
     "@types/react": "16.9.5",
     "clean-webpack-plugin": "3.0.0",
     "compression-webpack-plugin": "3.0.0",
