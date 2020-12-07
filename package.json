@@ -9,7 +9,7 @@
     "@types/react": "16.9.32",
     "clean-webpack-plugin": "3.0.0",
     "compression-webpack-plugin": "3.1.0",
-    "copy-webpack-plugin": "5.1.2",
+    "copy-webpack-plugin": "6.4.0",
     "preact": "10.5.7",
     "preact-render-to-string": "5.1.12",
     "source-map-loader": "0.2.4",
