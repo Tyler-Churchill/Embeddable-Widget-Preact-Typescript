@@ -11,7 +11,7 @@
     "compression-webpack-plugin": "3.1.0",
     "copy-webpack-plugin": "5.1.2",
     "preact": "10.5.12",
-    "preact-render-to-string": "5.1.14",
+    "preact-render-to-string": "5.1.15",
     "source-map-loader": "0.2.4",
     "ts-loader": "6.2.2",
     "typescript": "3.9.9",
